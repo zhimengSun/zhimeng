@@ -1,0 +1,250 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:    
+
+    login_sucess:                   "Login Successfully"
+    logout_sucess:                  "You have logined out"
+    logout:                         "Logout"
+    login_failed:                   "Login Failed"
+    email_error:                    "No This User"
+    email_format_error:            "Format of Email is not correct!"
+    login_error:                    "No This User"
+    pass_error:                     "Password is Wrong!"
+    password:                       "Password"
+    login_failed_for:               "Login Failed For "
+    from:                           "From"
+    email:                          "Email"
+    at:                             "At"
+    about_me:                       'About Me'
+    abstract:                       'Abstract'
+    accept:                         'Accept'
+    action:                         'Action'
+    name:                           'Name'
+    gender:                         'Gender'
+    male:                           'Male'
+    female:                         'Female '
+    phone:                          'Phone Number'
+    tel:                             'Tel'
+
+    prepare_to:                     'System Will'
+    to_redirect:                    'Seconds'
+    auto_redirect:                  'Auto Redirect To'
+
+    create_account_now:             'Create A New Account Now'
+    no_account:                     "Haven't Account?"
+    notification:                   'Thank you for your register ! We have send you a email with activation code，Please check it。'
+    signup_thanks:                  'Thank you for your register ! We have send you a email with activation code，Please check it。'
+    signup_fail:                    "Sorry，Something was Wrong。Please try again。"
+    signup_sucess:                  "Sign Up Comepletely!login and continue."
+
+    activation_code_blank:          "Activation code is incorrect!"
+    activate_failed:                "Activation code is incorrect!"
+
+    reset_code_send:                "Activation code  "
+    not_exist:                      " Not in System"
+    reset_sucess:                   "Password Reset  "
+
+    at:                             "At"
+    note_about_tip:                 'This Is For You.Just For Yourself!'
+    website_title:                  "Sun Zhimeng，Personal Website"
+    website_keywords:               "Sun Zhimeng，Personal Website"
+    website_desc:                   "Sun Zhimeng，Personal Website"
+    yes_t:                          'Yes'     
+    website_footer:                 "Personal Life Website"
+    signup:                         "Sign Up"
+    welcome_to:                     "Welcome to My Home!"
+    good_words:                     "If you are here , That's because we  !If you are always here,That's because we are friends!"
+    login:                          "Login"
+    my_menu:                        "My Short Menus"
+
+    en:                             "English"
+    zh_CN:                          "Chinese"
+
+    type_note:                      "Type your message …………"
+    leave_message:                  "Leave Message"
+    save:                           "Save"
+    cancel:                         "Cancel"
+    leaved_messages:                "All Messages"
+    leave_message:                  "Messages"
+    message_title:                  "Title"
+    delete:                         "Delete"
+    delete_all:                     "Delete All"
+    thank_for_mess:                 "Thank you for your messages"
+    my_love:                        "My Lover"
+    about_me:                       "About Me"
+    about_us:                       "About Us"
+    email_null:                     "Please Input Email"
+    pass_null:                      "Please Input Password"
+    pic_time:                       "Shoted At"
+    my_photos:                      "My Photos"
+    my_blogs:                       "My Blogs"
+    szm:                            "Sun Zhimeng"
+    basic_info:                     "Basic Info"
+    me_desc:                        "My name is Sun Zhimeng，A real DIAOSI.Was Born in 1987，BaoDing China.Love Music and Coding"
+    desc:                           "Desc"
+    home:                           "Home"
+    the_time:                       "Time"
+    image:                          "Image"
+    short_menu:                     "Short Menu"
+    edit:                           "Edit"
+    select_a_gender:                "Select Gender"
+    mobile:                         "Phone"
+    address:                        "Address"
+    submit:                         "Submit"
+    reset:                          "Reset"
+    waiting_blog:                   "Waiting ……"
+    my_songs:                       "My Songs"
+    prev_page:                      "Previous"
+    next_page:                      "Next"
+    create_blog:                    "Create Blog"
+    edit_blog:                      "Edit Blog"
+    title:                          "Title"
+    content:                        "Content"
+    blog_title:                     " My Blogs"
+    blog_keywords:                  "Blog,博客,技术,IT"
+    category:                       "Category"
+    keywords:                       "Keywords"
+    create_failed:                  "Creat Failed"
+    leave_mess_failed:             "Leave Message Failed, Please leave your Email and Messages"
+    exsample_email:                 "Exsample@google.com"
+    update_failed:                  "Update Failed"
+    create_song:                    "Create Song"
+    edit_song:                      "Edit Song"
+    singer:                         "Singer"
+    picture:                        "Picture"
+    songs:                          "Songs"
+    type:                           "Category"
+    select_song:                    "Select Song"
+    song_name:                      "Song Name"
+    zhis:                           "Management"
+    sing_time:                      "Sing At"
+    other_singers:                  "Other Singers"
+    me:                             "Sun Zhimeng"
+    writer:                         "Author"
+    new_singer:                     "Other Singer"
+    comment:                        "Comment"
+    leave_comment:                  "Input your comments"
+    welcome:                        "Welcome"
+    thank_comment:                  "Thank you for your Comment"
+    comment_not_empty:              "The comment can not be empty"
+    reading_more:                   "Text reading"
+    contact_me:                     "Contact Me"
+    to_top:                         "To Top"
+    play:                           "Play"
+    pause:                          "Pause"
+    stop:                           "Stop"
+    mute:                           "Mute"
+    unmute:                         "Unmute"
+    repeat:                         "Repeat"
+    repeat_off:                     "Repeat Off"
+    max_volume:                     "Max Volume"
+    email_me:                       "Email Me"
+    no_images:                      "No pictures"
+    to_pass_url:                    "Show"
+    input_password:                 "Please Input Password to Show"
+    manage_blogs:                   "Blog Management"
+    created_at:                     "Created At"
+    browse_times:                   "Browse Times"
+    comments_times:                 "Comments Times"
+    manage:                         "Management"
+    latest_blog_comments:           "Latest Blog Comments"
+    latest_blogs:                   "Latest Blogs"
+    comment_user:                   "Comment User"
+    show:                           "Show"
+    reply:                          "Reply"
+    latest_songs:                   "Latest Songs"
+    latest_pictures:                "Latest Pictures"
+    blog_list:                      "Blog List"
+    comment_list:                   "Comment List"
+    tracker_list:                   "Tracker List"
+    location:                       "Location"
+    return_zhis:                    "Return Manage"
+    sing_at:                        "Recorded At"
+    new_obj:                        "New Object"
+    manage_types:                   "Manage Types"
+    user_infos:                     "User Infos"
+    latest_state:                   "Latest Mind"
+    time_line:                      "Time Line"
+    motto:                          "Motto"
+    incorrect_password:             "Incorrect Password"
+    no_permission:                  "No Permission"
+    no_picture:                     "No Picture"
+    sure_to_delete:                 "Are you sure?"
+    sofi:                           "Sofi"
+    saitrong:                       "Saitrong"
+    university:                     "Nan Chang Hangkong University"
+    middle_school:                  "YuYing Middle School For three years, fourth year At DingXing 3 School"
+    small_school:                   "LongHua"
+    birth:                          "Birth"
+    no_state:                       "No State"
+    back:                           "Back"
+    new:                            "New"
+    add:                            "Add"
+    failed:                         "Failed"
+    albums:                         "Albums"
+    as_covers:                      "As Covers"
+
+
+
+
+
+
+
+
+
+
+    will_paginate:
+      previous_label:               "Previous"
+
+    views:
+      pagination:
+        first: First
+        previous: Prev
+        next: Next
+        last: Last
+        truncate: "..."
+    date:
+      formats: 
+        default: ""
+        long: ""
+        short: ""
+
+    activerecord:
+      models:
+        user: "User"    
+      attributes:
+        user:
+          login: "Login"
+          email: "Email"
+          name: "Name"
+          address: "Address"
+          password: "Password"
+          password_confirmation: "Password confirmation"
+        module_type:
+          bean: "Bean"
+          name: "The name"
+        blog:
+          title: "Title"
+          content: "Content"
+        song:
+          name: "Song Name"
+          desc: "Song Description"
+          singer: Please select a singer
+        image_desc:
+          desc: "Image Description"
+          pic_time: "Shot Time"
+
+      errors:
+        messages:
+          blank: "Can't by Empty"
+          confirmation: "Not Matched"
+          invalid: "Invalid "  
+          taken: "Already Been Token"
+          too_short: "Too Short"
+          not_a_number: "Not a Number"
+        template:
+          header:
+            one: "One Error!"
+            other: "{{count}} Errors"
+          body: "Error Messages"

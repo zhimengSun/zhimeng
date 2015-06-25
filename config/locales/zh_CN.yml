@@ -1,0 +1,251 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+zh_CN:    
+
+    login_sucess:                   "登录成功"
+    logout_sucess:                  "您已经登出"
+    logout:                         "退出"
+    login_failed:                   "登陆失败，请检查账号密码"
+    email_error:                    "没有此用户"
+    email_format_error:             "电子邮件格式不正确"
+    login_error:                    "没有此用户"
+    pass_error:                     "密码错误"
+    password:                       "密码"
+    login_failed_for:               "登录失败 "
+    from:                           "自"
+    email:                          "电子邮件"
+    at:                             "在"
+    about_me:                       '关于我'
+    abstract:                       '摘要'
+    accept:                         '接受'
+    action:                         '操作'
+    name:                           '姓名'
+    gender:                         '性别'
+    male:                           '男'
+    female:                         '女 '
+    phone:                          '电话'
+    tel:                            '电话'
+
+    prepare_to:                     '系统将在'
+    to_redirect:                    '秒后'
+    auto_redirect:                  '自动跳转'
+
+    create_account_now:             '现在就创建一个帐户'
+    no_account:                     '还没有帐户？'
+    notification:                   '谢谢你的注册！我们已将激活码以邮件方式发给您，请查收。'
+    signup_thanks:                  "谢谢你的注册！我们已将激活码以邮件方式发给您，请查收。"
+    signup_fail:                    "对不起，无法创建该帐户。请再试一次，或联系管理员。"
+    signup_sucess:                  "注册完成！请登录以继续。"
+
+    activation_code_blank:          "激活码不正确。请依照您的电子邮件网址。"
+    activate_failed:                "我们无法找到该用户的激活代码 - 检查你的电子邮件？也许你已经激活 - 尝试登录"
+
+    reset_code_send:                "重置代码发送到 "
+    not_exist:                      "在系统中不存在"
+    reset_sucess:                   "密码重置成功 "
+
+    at:                             "在"
+    website_name:                   "小萌网站"
+    website_title:                  "孙志萌，个人网站"
+    website_keywords:               "孙志萌，个人网站"
+    website_desc:                   "孙志萌，个人网站"
+    yes_t:                          '是'     
+    website_footer:                 "个人生活记录网站"
+    signup:                         "注册"
+    welcome_to:                     "欢迎来我家!"
+    good_words:                     "如果你来到了这里，说明我们有缘分!如果你经常来这里，说明我们是朋友!"
+    login:                          "登陆"
+    my_menu:                        "我的菜单"
+
+    en:                             "英文"
+    zh_CN:                          "中文"
+
+    type_note:                      "请输入您的留言"
+    leave_message:                  "给我留言"
+    save:                           "保存"
+    cancel:                         "取消"
+    leaved_messages:                "所有留言"
+    leave_message:                  "给我留言"
+    message_title:                  "标题"
+    delete:                         "删除"
+    delete_all:                     "删除所有"
+    thank_for_mess:                 "感谢您的留言"
+    my_love:                        "我的爱人"
+    about_me:                       "关于我"
+    about_us:                       "关于我们"
+    email_null:                     "请填写电子邮件"
+    pass_null:                      "请输入密码"
+    pic_time:                       "拍摄日期"
+    my_photos:                      "我的相册"
+    my_blogs:                       "我的博客"
+    szm:                            "孙志萌"
+    basic_info:                     "基本信息"
+    me_desc:                        "全名孙志萌，纯屌丝一枚。1987年生，中国保定龙华村村民。酷爱编程与音乐。"
+    desc:                           "描述"
+    home:                           "首页"
+    the_time:                       "时间"
+    image:                          "图片"
+    short_menu:                     "快捷方式"
+    edit:                           "编辑"
+    select_a_gender:                "选择性别"
+    mobile:                         "手机号码"
+    address:                        "地址"
+    submit:                         "提交"
+    reset:                          "重置"
+    waiting_blog:                   "Waiting ……"
+    my_songs:                       "我的歌曲"
+    prev_page:                      "上一页"
+    next_page:                      "下一页"
+    create_blog:                    "创建博客"
+    edit_blog:                      "编辑博客"
+    title:                          "标题"
+    content:                        "内容"
+    blog_title:                     "我的博客"
+    blog_keywords:                  "博客，Blog,技术"
+    category:                       "博客类别"
+    keywords:                       "关键词"
+    create_failed:                  "创建失败"
+    leave_mess_failed:              "请务必留下您的电子邮件或者手机号码"
+    exsample_email:                 "Exsample@gmail.com"
+    update_failed:                  "更新失败"
+    create_song:                    "创建歌曲"
+    edit_song:                      "编辑歌曲"
+    singer:                         "歌手"
+    picture:                        "照片"
+    songs:                          "我的歌曲"
+    type:                           "类型"
+    select_song:                    "选择歌曲"
+    song_name:                      "歌曲名称"
+    zhis:                           "管理"
+    sing_time:                      "录制时间"
+    sing_time:                      "录制时间"
+    other_singers:                  "其他歌手"
+    me:                             "孙志萌"
+    writer:                         "作者"
+    new_singer:                     "其他歌手"
+    comment:                        "评论"
+    leave_comment:                  "输入您的评论"
+    welcome:                        "欢迎来到这里"
+    thank_comment:                  "感谢您的评论"
+    comment_not_empty:              "输入的评论不能为空"
+    reading_more:                   "阅读更多"
+    contact_me:                     "联系我"
+    to_top:                         "返回顶部"
+    play:                           "播放"
+    pause:                          "暂停"
+    stop:                           "停止"
+    mute:                           "静音"
+    unmute:                         "取消静音"
+    repeat:                         "重复"
+    repeat_off:                     "关闭重复"
+    max_volume:                     "最大音量"
+    email_me:                       "给我写邮件"
+    no_images:                      "该相册里无照片"
+    to_pass_url:                    "查看"
+    input_password:                 "请输入密码"
+    manage_blogs:                   "管理博客"
+    created_at:                     "创建时间"
+    browse_times:                   "浏览次数"
+    comments_times:                 "评论次数"
+    manage:                         "管理"
+    latest_blog_comments:           "最新评论"
+    latest_blogs:                   "最新博客"
+    comment_user:                   "评论者"
+    show:                           "查看"
+    reply:                          "回复"
+    latest_songs:                   "最新歌曲"
+    latest_pictures:                "最新照片"
+    blog_list:                      "博客列表"
+    comment_list:                   "评论列表"
+    tracker_list:                   "来访记录"
+    location:                       "所在地"
+    return_zhis:                    "返回管理页面"
+    sing_at:                        "录制时间"
+    new_obj:                        "新建对象"
+    manage_types:                   "类别管理"
+    user_infos:                     "用户信息"
+    latest_state:                   "最新状态"
+    time_line:                      "成长轨迹"
+    motto:                          "格言"
+    incorrect_password:             "密码错误"
+    no_permission:                  "无此权限"
+    no_picture:                     "暂无照片"
+    sure_to_delete:                 "确定做此操作么？"
+    sofi:                           "北京索菲合众智能科技有限公司 （初创企业） - ruby on rails 敏捷开发。"
+    saitrong:                       "赛创新港（北京）科技有限公司 （初创企业） - ruby on rails 敏捷开发。"
+    university:                     "南昌航空大学 - 计算机科学与技术专业。"
+    middle_school:                  "易县育英中学，三年不才。高四定兴三中"
+    small_school:                   "小学就读于村子里，初中就读于高里中学。"
+    birth:                          "出生"
+    no_state:                       "暂无状态"
+    back:                           "返回"
+    new:                            "新建"
+    add:                            "添加"
+    albums:                         "相册"
+    as_covers:                      "设为封面"
+    new_state: 写状态 
+
+
+
+
+
+
+
+
+
+
+    will_paginate:
+      previous_label:               "上一页"
+
+    views:
+      pagination:
+        first: 首页
+        previous: 上一页
+        next: 下一页
+        last: 末页
+        truncate: "..."
+    date:
+      formats: 
+        default: ""
+        long: ""
+        short: ""
+
+    activerecord:
+      models:
+        user: "用户"    
+      attributes:
+        user:
+          login: "用户名"
+          email: "电子邮件"
+          name: "真实姓名"
+          address: "地址"
+          password: "密码"
+          password_confirmation: "密码确认"
+        module_type:
+          bean: "类别种类"
+          name: "类别名"
+        blog:
+          title: "标题"
+          content: "内容"
+        song:
+          name: "歌曲名称"
+          desc: "歌曲描述"
+          singer: 请选择歌手
+        image_desc:
+          desc: "照片描述"
+          pic_time: "拍摄时间"
+
+      errors:
+        messages:
+          blank: "不能为空"
+          confirmation: "与重复值不符合"
+          invalid: "是无效的"  
+          taken: "已经被使用"
+          too_short: "太短"
+          not_a_number: "不是数字"
+        template:
+          header:
+            one: "有一个错误"
+            other: "有{{count}}个错误"
+          body: "以下错误信息"

@@ -1,0 +1,20 @@
+<div class="am-g am-g-fixed">
+  <div class="am-u-md-12">
+    <div class="am-panel-group">
+      <section class="am-panel am-panel-default">
+        <div class="am-panel-hd"><%= t :about_me %></div>
+        <div class="am-panel-bd">
+          <p><%= t :me_desc %></p>
+        </div>
+      </section>
+    </div>
+    <div class="am-panel-group">
+      <section class="am-panel am-panel-default">
+        <div class="am-panel-hd"><%= t :time_line %></div>
+        <div class="am-panel-bd">
+          <p><%= raw @blog.content %></p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

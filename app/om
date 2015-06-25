@@ -1,0 +1,9 @@
+class State < ActiveRecord::Base
+  establish_connection "my"
+  # attr_accessible :time, :title
+  # after_create :sync_time  
+  # def sync_time
+  #   update_attribute(:time, Time.now)
+  # end
+
+end
