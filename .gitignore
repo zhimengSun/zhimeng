@@ -40,3 +40,4 @@ pickle-email-*.html
 # uploaded files
 /uploads
 *.sql
+/config/secret*

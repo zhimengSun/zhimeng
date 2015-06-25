@@ -6,6 +6,6 @@ class ImageDesc < ActiveRecord::Base
   end
 
   def real_url
-    WebHost + picture.file_path.to_s.split("public")[1] rescue nil 
+    OldWebHost + picture.file_path.to_s.split("public")[1] rescue nil 
   end
 end

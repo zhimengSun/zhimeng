@@ -7,6 +7,7 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 WebHost = "http://www.sunzhimeng.com"
+OldWebHost = "http://old.sunzhimeng.com"
 
 module Zhimeng
   class Application < Rails::Application
