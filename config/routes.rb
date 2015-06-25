@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
   get "about_me" => 'zhis#about_me'
   
-  resources :blogs do
-    collection do
-      get :tag
-    end
-  end
+  get "tag/:tag", to: "blogs#tag", as: "tag"
+  get "search", to: "zhis#search"
+
+  resources :blogs
   resources :songs
   resources :image_descs
 

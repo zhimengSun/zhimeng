@@ -1,7 +1,8 @@
 class BlogsController < ApplicationController
 
   def tag
-    @blogs = page_objs(WordTag.where(name: params[:tag]).first.blogs)
+    tg = WordTag.where(name: params[:tag]).first
+    @blogs = page_objs(tg ? tg.blogs : [])
     render "zhis/index"
   end
   

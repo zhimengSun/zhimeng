@@ -1,5 +1,11 @@
 <div class="am-g am-g-fixed blog-g-fixed">
   <div class="am-u-md-<%= action_name == 'tag' ? 12 : 8 %>">
+    <% if %w(search tag).include?(action_name) %>
+      <div class="am-alert am-alert-<%= @blogs.empty? ? "danger" : "success"%>" data-am-alert="">
+        <button type="button" class="am-close">×</button>
+        <p><%= @blogs.empty? ? "您到火星了吗？？" : "共检索到#{@blogs.size}条结果" %></p>
+      </div>
+    <% end %> 
     <% @blogs.each do |blog| %> 
       <article class="blog">
         <h3 class="am-article-title blog-title">
@@ -7,11 +13,12 @@
         </h3>
         <p>
           <% blog.tags.each do |tag| %>
-            <%= link_to tag.name, tag_blogs_path(tag: tag.name), class: "am-badge am-badge-success" %>
+            <%= link_to tag.name, tag_path(tag: tag.name), class: "am-badge am-badge-success" %>
           <% end %>
         </p>
         <div class="am-g blog-content"> <%= raw short_blog(blog) %></div>
       </article>
+      <p class="am-article-meta"><%= blog.post_time %></p>
       <hr class="am-article-divider blog-hr">
     <% end %> 
     <%= paginate @blogs %>

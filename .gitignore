@@ -36,6 +36,7 @@ pickle-email-*.html
 
 #public folders
 /public/*.mp3
+/public/system*
 /public/assets
 # uploaded files
 /uploads

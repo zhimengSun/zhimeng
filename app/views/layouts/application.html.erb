@@ -94,12 +94,12 @@
       <li class="<%= active_menu(request.path =~ /about_me/) %>"> <%= link_to t(:about_me), about_me_path %></li>
     </ul>
 
-    <!-- <form class="am-topbar-form am-topbar-left am-form-inline am-topbar-right" role="search">
+    <form class="am-topbar-form am-topbar-left am-form-inline am-topbar-right" role="search" action="/search">
       <div class="am-form-group">
-        <input type="text" class="am-form-field am-input-sm" placeholder="搜索文章">
+        <input type="text" class="am-form-field am-input-sm" placeholder="<%= @k || "搜索文章" %>" name="k">
       </div>
       <button type="submit" class="am-btn am-btn-default am-btn-sm">搜索</button>
-    </form> -->
+    </form>
 
   </div>
 </header>

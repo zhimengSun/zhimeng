@@ -7,7 +7,12 @@ class Blog < ActiveRecord::Base
   default_scope {where("id != 1")}
 
   def tags
-    WordTag.where("id in (#{self.tag_ids})") if self.tag_ids.presence
+    return WordTag.where("id in (#{self.tag_ids})") if self.tag_ids.presence
+    []
+  end
+
+  def content
+    super.to_s.gsub(/class\=\"table/, 'class="am-table')
   end
 
   def keywords
