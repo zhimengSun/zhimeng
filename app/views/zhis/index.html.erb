@@ -1,49 +1,52 @@
 <div class="am-g am-g-fixed blog-g-fixed">
-  <div class="am-u-md-8">
+  <div class="am-u-md-<%= action_name == 'tag' ? 12 : 8 %>">
     <% @blogs.each do |blog| %> 
-      <article class="blog-main">
+      <article class="blog">
         <h3 class="am-article-title blog-title">
-          <a href="#"><%= blog.title %></a>
+          <%= link_to blog.title, blog_path(blog) %></a>
         </h3>
-        <h4 class="am-article-meta blog-meta">by <a href="/about_me"><%= t :me %></a> 
-           posted on <%= blog.post_time %></h4>
-
+        <p>
+          <% blog.tags.each do |tag| %>
+            <%= link_to tag.name, tag_blogs_path(tag: tag.name), class: "am-badge am-badge-success" %>
+          <% end %>
+        </p>
         <div class="am-g blog-content"> <%= raw short_blog(blog) %></div>
       </article>
       <hr class="am-article-divider blog-hr">
     <% end %> 
     <%= paginate @blogs %>
   </div>
-
-  <div class="am-u-md-4 blog-sidebar">
-    <div class="am-panel-group">
-      <section class="am-panel am-panel-default">
-        <div class="am-panel-hd"><%= t(:latest_state) %></div>
-        <div class="am-panel-bd">
-          <p><%= @state.description %></p>
-          <i><%= @state.created_at %></i>
-        </div>
-      </section>
-      <section class="am-panel am-panel-default">
-        <div class="am-panel-hd"><%= t :latest_blogs %></div>
-        <ul class="am-list blog-list">
-          <% @late_blogs.each do |blog| %> 
-            <li><%= link_to blog.title, blog_path(blog) %></li>
-          <% end %> 
-        </ul>
-      </section>
-
-      <section class="am-panel am-panel-default">
-        <div class="am-panel-hd"><%= t :latest_pictures %></div>
-        <div class="am-panel-bd">
-          <ul class="am-avg-sm-4 blog-team">
-            <% @photos.each do |photo| 
-               next if photo.real_url.nil? %> 
-              <li><%= image_tag photo.real_url ,class: "am-thumbnail" %></li>
+  <% if action_name != 'tag' %>
+    <div class="am-u-md-4 blog-sidebar">
+      <div class="am-panel-group">
+        <section class="am-panel am-panel-default">
+          <div class="am-panel-hd"><%= t(:latest_state) %></div>
+          <div class="am-panel-bd">
+            <p><%= @state.description %></p>
+            <i><%= @state.created_at %></i>
+          </div>
+        </section>
+        <section class="am-panel am-panel-default">
+          <div class="am-panel-hd"><%= t :latest_blogs %></div>
+          <ul class="am-list blog-list">
+            <% @late_blogs.each do |blog| %> 
+              <li><%= link_to blog.title, blog_path(blog) %></li>
             <% end %> 
           </ul>
-        </div>
-      </section>
+        </section>
+
+        <section class="am-panel am-panel-default">
+          <div class="am-panel-hd"><%= t :latest_pictures %></div>
+          <div class="am-panel-bd">
+            <ul class="am-avg-sm-4 blog-team">
+              <% @photos.each do |photo| 
+                 next if photo.real_url.nil? %> 
+                <li><%= image_tag photo.real_url ,class: "am-thumbnail" %></li>
+              <% end %> 
+            </ul>
+          </div>
+        </section>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>

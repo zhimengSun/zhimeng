@@ -1,13 +1,8 @@
 class BlogsController < ApplicationController
 
-  def index
-    if params[:tag]
-      blogs = WordTag.where(name: params[:tag]).first.blogs
-    else
-      str = params[:type_id] ? "category_id = #{params[:type_id]}" : ""
-      blogs = Blog.where(str).order("id DESC")
-    end
-    @blogs = page_objs(blogs, 10)
+  def tag
+    @blogs = page_objs(WordTag.where(name: params[:tag]).first.blogs)
+    render "zhis/index"
   end
   
   def show
