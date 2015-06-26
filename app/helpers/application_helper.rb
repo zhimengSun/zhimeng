@@ -8,4 +8,8 @@ module ApplicationHelper
     (blog.content.gsub(/<[^>]*>/, "")[0, num] +
     "<a href='/blogs/#{blog.id}' target='_blank'><font color='#FF9900'><font size='2'>&lt;#{t(:reading_more)}&gt;</font></font></a>").html_safe
   end
+
+  def into_datetime(time)
+    time.strftime("%F %T")
+  end
 end

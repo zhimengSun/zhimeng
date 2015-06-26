@@ -1,0 +1,15 @@
+.am-g.am-g-fixed
+  .mod-avator.clearfix
+    h2.am-article-title.text-center
+      span = @song.try(:name) 
+    #dewplayer_content = render "player" 
+    h6.am-padding.text-center = @song.try(:desc) 
+  .am-u-md-12
+    .am-panel-group
+      table.am-table.am-table-bordered
+        - @songs.each do |song| 
+          tr.song
+            td = link_to song.name, song_path(song)
+            td = "(#{ song.type })"
+            td = song.browse_times.to_s + "次"
+            td = into_datetime song.sing_time

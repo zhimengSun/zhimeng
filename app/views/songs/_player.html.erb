@@ -1,0 +1,45 @@
+<%= javascript_include_tag "/assets/js/jquery.jplayer.min","/assets/js/jquery.jplayer.inspector" %>
+<%= stylesheet_link_tag "application" %> 
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div class="control" id="jp_container_1">
+  <div class="pause">
+    <a href="javascript:;" class="jp-play" tabindex="1" ><img src="/images/Playv2.png"></a>
+    <a href="javascript:;" class="jp-pause" tabindex="1" ><img src="/images/Pausev2.png"></a>
+  </div>
+  <div class="music">
+    <div class="music_name"></div>
+    <div class="bar jp-progress">
+      <div class="bar_show jp-seek-bar">
+        <div class="bar_h jp-play-bar"></div>
+      </div>
+    </div>
+    <div class="music_time">
+      <span class="jp-current-time"></span>/<span class="jp-duration"></span>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  //<![CDATA[
+  $(document).ready(function(){
+    $("#jquery_jplayer_1").jPlayer({
+      ready: function () {
+        $(this).jPlayer("setMedia", {mp3: "<%= WebHost + @song.try(:path).to_s %>"}).jPlayer("play");
+      },
+      swfPath: "/",
+      supplied: "mp3",
+      wmode: "window"
+    });
+    $('.pause').hover(
+      function(){
+        $('.pause > .jp-play > img').attr('src',"/images/Play_sv2.png");
+        $('.pause > .jp-pause > img').attr('src',"/images/Pause_sv2.png");
+      },
+      function(){
+        $('.pause > .jp-play > img').attr('src',"/images/Playv2.png");
+        $('.pause > .jp-pause > img').attr('src',"/images/Pausev2.png");
+      }
+    );
+  });
+  //]]>
+</script>

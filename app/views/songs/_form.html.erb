@@ -1,0 +1,55 @@
+<div class="new_table">
+    <h3><%= action_name == "new" ? t(:create_song) : t(:edit_song)  %></h3>
+    <%= form_for @song, :html => { :multipart => true}  do |f|  %>
+    <%= render "/shared/error_messages", :target => @song %>
+    <table class="form" width="80%">
+          <tr>
+            <td><%= t :song_name %></td>
+            <td><%= text_field "song", "name", :size => 60, :class => "text min-length-3 bad-words"  %> </td>
+          </tr>
+          <tr>
+             <td><%= t :sing_time %></td>
+             <td><%= f.datetime_select :sing_time, :use_month_numbers => true, :order => [:year, :month, :day]  %></td>
+          </tr>
+          <tr>
+              <td><%= t :type %></td>
+              <td><%= select "song", "type_id", ModuleType.song_types.collect{|m| [m.name,m.id]}  %></td>
+          </tr>
+          <tr>
+              <td><%= t :is_default %></td>
+              <td><%= select "song", "is_default", [[0, false], [1, true]] %></td>
+          </tr>
+          <tr>
+              <td><%= t :singer %></td>
+              <td id="singer_name" colspan="2" >
+                  <select id="song_singer_id" name="song[singer_id]" onchange="document.getElementById('singerPic').src='/images/singers/'+this.value+'.jpg'">
+                    <% Singer.all.each do |s| %>
+                        <option value="<%= s.id %>" <%= "selected='selected'" if @song.singer_id == s.id %>><%= s.name %></option>
+                    <% end %>
+                  </select>
+                  <%=link_to_function t(:new_singer), "$('#singer_name').html('<input name=\"singer_name\" />');$('#singer_picture').html('<input name=\"singer_picture\" type=\"file\">');" %>
+              </td>
+          </tr>
+          <tr>
+              <td><%= t :picture %></td>
+              <td id="singer_picture">
+                  <img src="/system/Singers/<%=@song.singer_id || "1" %>.jpg" id="singerPic"/>
+              </td>
+          </tr>
+          <tr>
+              <td><%= t :select_song %></td>
+              <td><%= file_field_tag :song_file %></td>
+          </tr>
+          <tr>
+              <td><%= f.label t(:desc) + " English" %></td>
+              <td><%= f.text_area :desc_en, :rows => 5, :cols => 70 %></td>
+          </tr>
+          <tr>
+              <td><%= f.label t(:desc) + " 中文" %></td>
+              <td><%= f.text_area :desc_zh_CN, :rows => 5, :cols => 70 %></td>
+          </tr>
+          <%= save_and_return f %>
+        </table>
+      <% end %>
+    </div>
+<div id="clr"></div>

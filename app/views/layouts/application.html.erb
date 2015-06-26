@@ -89,7 +89,7 @@
           <li><%= link_to t(:my_photos), image_descs_path %></li>
         </ul>
       </li> -->
-      <li><%= link_to t(:my_songs), OldWebHost + songs_path %></li>
+      <li><%= link_to t(:my_songs), songs_path %></li>
       <li><%= link_to t(:my_photos), OldWebHost + "/my_photos" %></li>
       <li class="<%= active_menu(request.path =~ /about_me/) %>"> <%= link_to t(:about_me), about_me_path %></li>
     </ul>
@@ -102,6 +102,7 @@
     </form>
 
   </div>
+  <script src="/assets/js/jquery.min.js"></script>
 </header>
 <%= yield %>
 <footer class="blog-footer">
@@ -119,7 +120,6 @@
 <![endif]-->
 
 <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/amazeui.min.js"></script>
 <!--<![endif]-->
 
