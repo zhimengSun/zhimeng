@@ -11,7 +11,11 @@ class ZhisController < ApplicationController
   def search
     get_common 
     @k = params[:k]
-    @blogs = page_objs(Blog.where("content like '%#{@k}%' or title like '%#{@k}%'"))
+    if @k.to_s =~ /[\_\%\\\?\/\>\<\*\&\^\#]+/
+      @blogs = page_objs Blog.where("id > 100000")
+    else
+      @blogs = page_objs(Blog.where("content like '%#{@k}%' or title like '%#{@k}%'"))
+    end
     render :index
   end
 
