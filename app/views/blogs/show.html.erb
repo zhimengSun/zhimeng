@@ -1,25 +1,29 @@
+<% if @blog %>
   <div class="am-u-sm-12 am-article text-center">
     <h1 class="am-article-title"><%= @blog.title %></h1>
     <p class="am-article-meta"><%= @blog.post_time %></p>
   </div>
-<hr class="am-article-divider"/>
-<div class="am-u-sm-12 am-article">
-  <div class="am-u-md-12 ">
-      <div class="am-u-sm-11 am-u-sm-centered">
-        <div class="am-cf am-article">
-           <%= raw @blog.content %>
+  <hr class="am-article-divider"/>
+  <div class="am-u-sm-12 am-article">
+    <div class="am-u-md-12 ">
+        <div class="am-u-sm-11 am-u-sm-centered">
+          <div class="am-cf am-article">
+             <%= raw @blog.content %>
+          </div>
+          <hr/>
         </div>
-        <hr/>
-      </div>
-  </div>
-  <div class="am-u-md-3 am-u-md-pull-9 my-sidebar">
-    <div class="am-offcanvas" id="sidebar">
-      <div class="am-offcanvas-bar">
-        <ul class="am-nav">
-          <li><a href="#"><%= t :my_blogs %></a></li>
-          <li class="am-nav-header">目录</li>
-        </ul>
+    </div>
+    <div class="am-u-md-3 am-u-md-pull-9 my-sidebar">
+      <div class="am-offcanvas" id="sidebar">
+        <div class="am-offcanvas-bar">
+          <ul class="am-nav">
+            <li><a href="#"><%= t :my_blogs %></a></li>
+            <li class="am-nav-header">目录</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
+<% else %>
+  <%= render "shared/error_tip", objs: [] %>
+<% end %>

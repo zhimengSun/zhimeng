@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title><%= t :website_name %></title>
+  <title><%= @page_title || t(:website_title) %></title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -12,6 +12,8 @@
   <link rel="alternate icon" type="image/png" href="/assets/i/favicon.png">
   <link rel="stylesheet" href="/assets/css/amazeui.min.css"/>
   <%= stylesheet_link_tag "application" %>
+  <meta name="Description" content="<%= t :website_desc %>">
+  <meta name="Keywords" content="<%= t :website_keywords %>">
   <style>
     @media only screen and (min-width: 1200px) {
       .blog-g-fixed {
@@ -70,7 +72,7 @@
 <body>
 <header class="am-topbar">
   <h1 class="am-topbar-brand">
-    <%= link_to t(:website_name), root_path %>
+      <a href="<%= OldWebHost %>" class="am-btn am-btn-primary am-btn-sm"><%= t(:old_version) %></a>
   </h1>
 
   <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
@@ -79,17 +81,9 @@
 
   <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
     <ul class="am-nav am-nav-pills am-topbar-nav">
-      <li class="<%= active_menu(request.path == "/") %>"> <%= link_to t(:my_blogs), root_path %></li>
-      <!-- <li class="am-dropdown" data-am-dropdown>
-        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-          <%= t :my_menu %><span class="am-icon-caret-down"></span>
-        </a>
-        <ul class="am-dropdown-content">
-          <li><%= link_to t(:my_songs), songs_path %></li>
-          <li><%= link_to t(:my_photos), image_descs_path %></li>
-        </ul>
-      </li> -->
-      <li><%= link_to t(:my_songs), songs_path %></li>
+      <!-- <li class="<%= active_menu(request.path == "/") %>"> <%= link_to t(:every_snatch), root_path %></li> -->
+      <li class="<%= active_menu(request.path == my_blogs_path) %>"> <%= link_to t(:my_blogs), my_blogs_path %></li>
+      <li class="<%= active_menu(request.path == songs_path) %>"> <%= link_to t(:songs), songs_path %></li>
       <li><%= link_to t(:my_photos), OldWebHost + "/my_photos" %></li>
       <li class="<%= active_menu(request.path =~ /about_me/) %>"> <%= link_to t(:about_me), about_me_path %></li>
     </ul>

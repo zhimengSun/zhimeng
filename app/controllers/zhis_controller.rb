@@ -19,6 +19,11 @@ class ZhisController < ApplicationController
     render :index
   end
 
+  def every_snatch
+    index
+    render :index
+  end
+
   private
     def get_common
       @late_blogs = Blog.order("created_at DESC").limit(5)

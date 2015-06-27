@@ -8,7 +8,7 @@ class BlogsController < ApplicationController
   
   def show
     @blog = Blog.find_by_id(params[:id])
-    return render_alert "No This Blog" if !@blog
+    return @error = "No This Blog" if !@blog
     udpate_show_times @blog
     @page_title = @blog.title
   end

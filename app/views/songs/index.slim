@@ -10,6 +10,6 @@
         - @songs.each do |song| 
           tr.song
             td = link_to song.name, song_path(song)
-            td = "(#{ song.type })"
+            // td = "(#{ song.type })"
             td = song.browse_times.to_s + "次"
             td = into_datetime song.sing_time

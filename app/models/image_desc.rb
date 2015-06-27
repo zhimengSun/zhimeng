@@ -5,7 +5,11 @@ class ImageDesc < ActiveRecord::Base
     Picture.where(bean_id: id, bean: "ImageDesc").last
   end
 
+  def desc
+    desc_zh_CN
+  end
+
   def real_url
-    OldWebHost + picture.file_path.to_s.split("public")[1] rescue nil 
+    WebHost + picture.file_path.to_s.split("public")[1] rescue nil 
   end
 end

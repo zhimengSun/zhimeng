@@ -1,0 +1,7 @@
+.admin-content
+  ul.am-avg-sm-2.am-avg-md-4.am-avg-lg-6.am-margin.gallery-list
+    - @image_descs.each do |image|
+      li
+        = image_tag image.real_url,class: "am-img-thumbnail am-img-bdrs"
+        .gallery-title = image.desc
+        .gallery-desc = image.pic_time

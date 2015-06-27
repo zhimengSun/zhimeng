@@ -28,6 +28,7 @@ zh_CN:
     tel:                            '电话'
 
     prepare_to:                     '系统将在'
+    old_version:                    '访问旧版'
     to_redirect:                    '秒后'
     auto_redirect:                  '自动跳转'
 
@@ -79,6 +80,7 @@ zh_CN:
     pic_time:                       "拍摄日期"
     my_photos:                      "我的相册"
     my_blogs:                       "我的博客"
+    every_snatch:                   "每日一抓"
     szm:                            "孙志萌"
     basic_info:                     "基本信息"
     me_desc:                        "全名孙志萌，纯屌丝一枚。中国保定龙华村村民。酷爱编程与音乐。"
