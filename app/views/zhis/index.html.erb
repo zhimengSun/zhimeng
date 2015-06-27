@@ -13,9 +13,12 @@
             <%= link_to tag.name, tag_path(tag: tag.name), class: "am-badge am-badge-success" %>
           <% end %>
         </p>
-        <div class="am-g blog-content"> <%= raw short_blog(blog) %></div>
+        <p class="blog"> <%= raw short_blog(blog) %></p>
+        <p class="am-article-meta">
+          <span class="am-icon-eye"></span>  <%= blog.browse_times %>
+          <span class="am-icon-th ml10"></span>  <%= blog.post_time %>
+        </p>
       </article>
-      <p class="am-article-meta"><%= blog.post_time %></p>
       <hr class="am-article-divider blog-hr">
     <% end %> 
     <%= paginate @blogs %>
