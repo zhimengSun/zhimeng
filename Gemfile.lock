@@ -36,10 +36,12 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
+    default_value_for (2.0.3)
     erubis (2.7.0)
     execjs (2.5.2)
     hike (1.2.3)
     i18n (0.7.0)
+    ipparse (0.2.0)
     jbuilder (2.2.8)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -122,6 +124,8 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  default_value_for
+  ipparse
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
