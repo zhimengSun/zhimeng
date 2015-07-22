@@ -10,7 +10,8 @@
         </h3>
         <p>
           <% blog.tags.each do |tag| %>
-            <%= link_to tag.name, tag_path(tag: tag.name), class: "am-badge am-badge-success" %>
+            <%= link_to tag.name, tag_path(tag: tag.name), 
+                class: "am-badge am-badge-#{%w(success danger warning).sample}" %>
           <% end %>
         </p>
         <p class="blog"> <%= raw short_blog(blog) %></p>
